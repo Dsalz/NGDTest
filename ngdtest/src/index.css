@@ -1,0 +1,41 @@
+:root{
+    --secondary-color: #ffffff;
+    --primary-color: #0b49f7;
+  }
+
+@font-face{
+  src: url('/fonts/HelveticaNeue/HelveticaNeueMedium.woff');
+  font-family: 'Helvetica Neue';
+  font-weight: 600;
+}
+@font-face{
+  src: url('/fonts/HelveticaNeue/HelveticaNeue-Thin.woff');
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+}
+@font-face{
+  src: url('/fonts/HelveticaNeue/HelveticaNeue-LightExt.woff');
+  font-family: 'Helvetica Neue';
+  font-weight: 300;
+}
+
+body {
+  padding: 0;
+}
+.blue-cl{
+  color: var(--primary-color, #0b49f7) !important;
+}
+
+.blue-bg{
+  background: var(--primary-color, #0b49f7) !important;
+}
+
+.round-edge{
+  border-radius: 30px;
+}
+
+input:focus{
+  border-color: var(--primary-color, #0b49f7);
+  outline: none;
+  font-style: inherit;
+}

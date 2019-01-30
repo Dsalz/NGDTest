@@ -1,0 +1,143 @@
+
+
+nav.navbar{
+  background-color: var(--secondary-color, #ffffff);
+  border-top: 4px solid var(--primary-color, #0b49f7);
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding: 7px 50px;
+}
+
+.navbar-brand-img{
+  width: 30px;
+  height: 45px;
+}
+
+.navbar-brand-text{
+  font-size: 20px;
+  font-weight: 600;
+  padding-left: 7px;
+  letter-spacing: 1.5px;
+}
+
+.nav-link{
+  margin: 0 7px;
+  font-size: 14px;
+}
+
+.active > .nav-link {
+  font-weight: 600;
+}
+
+.nav-btn{
+  color: var(--secondary-color, #ffffff) !important;
+  padding: .5rem 1.5rem !important;
+  transition: .1s linear all;
+}
+
+.nav-btn:hover, .signin-form-submit-btn:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 12px -5px;
+  transition: .1s linear all;
+}
+
+.nav-info{
+  justify-content: flex-end;
+  display: flex;
+}
+
+.signin-main{
+  width: 100%;
+  background: url('/images/bubbles.png');
+  background-position: center;
+  background-size: contain;
+  height: calc(100vh - 70px);
+  padding: 10% 0;
+}
+
+.signin-form{
+  width: 40%;
+  min-width: 300px;
+  max-width: 400px;
+  background: var(--secondary-color, #ffffff);
+  margin: auto;
+  border-top: 4px solid var(--primary-color, #0b49f7);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 12px -5px;
+  position: relative;
+}
+
+.signin-form-header{
+  font-size: 30px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.signin-form-sub-header{
+  font-size: 15px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.signin-form-error{
+  position: absolute;
+  left:0;
+  right: 0;
+  margin: 0 auto;
+  top: 105px;
+  color: red;
+  font-size: 12px;
+}
+
+.signin-form-input{
+  width: 100%;
+  padding: 10px 15px;
+  margin: 15px 0;
+  font-weight: 300;
+  font-size: 15px;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+.signin-form-submit-btn{
+  padding: 5px 30px;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  transition: .1s linear all;
+}
+
+.signin-form-submit-btn-img{
+  width: 20px;
+}
+
+.signin-form-link{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.signin-xtra-links{
+  display: flex;
+  width: 40%;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 15px auto;
+  justify-content: space-between;
+}
+
+.signin-xtra-link{
+  font-size: 10px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 991px){
+  .nav-info{
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  .nav-link {
+    margin: 0 0px;
+    text-align: center;
+  }
+}
